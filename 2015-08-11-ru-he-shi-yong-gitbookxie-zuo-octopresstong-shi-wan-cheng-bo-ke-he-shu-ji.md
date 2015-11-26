@@ -14,4 +14,4 @@ categories: Octopress
 4. 配置SUMMARY.md 关联 gitbook，通过目录访问Octopress文档。  
 5. 打开gitbook客户端，对新建的文档进行编写即可。
 
-<font color=red>更新：</font>
+<font color=red>更新：</font>gitbook 4.2.2之后，默认将rake new_post生成的文件目录导入到~/gitbook目录中，至此，以上方法作废了。
