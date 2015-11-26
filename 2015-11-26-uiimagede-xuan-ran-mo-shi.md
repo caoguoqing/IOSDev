@@ -15,9 +15,9 @@ UIImageRenderingModeAlwaysTemplate // 始终根据Tint Color绘制图片，忽�
 
 UIImage *img = [UIImage imageNamed:@"myimage"];
 img = [img imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-
+//实际效果，效果依旧显示为baritem的Tint Color
 UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithImage:setImage
-//                                                   style:UIBarButtonItemStylePlain
-//                                                  target:self
-//                                                  action:@selector(setAction:)];
+                                                   style:UIBarButtonItemStylePlain
+                                                  target:self
+                                                  action:@selector(setAction:)];
 ```
