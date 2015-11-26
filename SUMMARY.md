@@ -5,4 +5,5 @@
    * [搭建Octopress](2014-06-09-chu-bu-da-jian-octopress.md)
 * [IOS零碎问题](iosling_sui_wen_ti.md)
    * [ios7截屏问题](2014-06-10-ios7jie-ping-wen-ti.markdown)
+   * UIImage三种渲染模式
 
