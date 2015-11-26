@@ -3,6 +3,8 @@ layout: post
 title: "如何使用gitBook协作Octopress同时完成博客和书籍"
 date: 2015-08-11 14:41:40 +0800
 comments: true
+tags: [octopress,blog,github,mou,ruby]
+keywords: boys,octopress,技术
 categories: Octopress
 ---
 使用GitBook（**版本限于4.0之前的版本**） 来编写Octopress博客的步骤：  
