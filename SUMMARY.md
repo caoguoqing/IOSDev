@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [初步搭建Octopress](chapter1.md)
    * [搭建Octopress](2014-06-09-chu-bu-da-jian-octopress.md)
-   * gitBook协作Octopress
+   * [gitBook协作Octopress](2015-08-11-ru-he-shi-yong-gitbookxie-zuo-octopresstong-shi-wan-cheng-bo-ke-he-shu-ji.md)
 * [IOS零碎问题](iosling_sui_wen_ti.md)
    * [ios7截屏问题](2014-06-10-ios7jie-ping-wen-ti.markdown)
    * [UIImage三种渲染模式](2015-11-26-uiimagede-xuan-ran-mo-shi.md)
