@@ -5,7 +5,7 @@ date: 2015-08-11 14:41:40 +0800
 comments: true
 categories:
 ---
-使用GitBook（版本限于4.0之前的版本） 来编写Octopress博客的步骤：  
+使用GitBook（**版本限于4.0之前的版本**） 来编写Octopress博客的步骤：  
 1. ```cd ~/MyBlog```  
 2. **`rake new_post['文章名']`**或 **`rake new_page['404']`**新建md文档.  
 3. **`mv *.markdown *.md`** mv命令修改后缀为md，便于gitbook在Preview website识别该文档。  
