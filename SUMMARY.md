@@ -16,5 +16,5 @@
    * 清除git历史记录大文件bfg
 * [Swift学习](swiftxue_xi.md)
    * [Swift最佳实践](2015-09-29-zhuan-swiftzui-jia-shi-jian.markdown)
-   * Swift入门
+   * [Swift入门](2015-11-27-swiftru-men.markdown)
 
