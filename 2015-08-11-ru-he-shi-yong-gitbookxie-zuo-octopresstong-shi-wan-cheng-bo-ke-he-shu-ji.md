@@ -23,6 +23,7 @@ categories: Octopress
 * 方法一：拷贝gitbook编辑的md文件，覆盖到octpress的_post目录下。
 * 方法二：通过github，公用一个版本库，来管理同步。
 
+<font color=red>更新：</font>gitbook 4.2.2之后，默认将rake new_post生成的文件目录导入到~/gitbook目录中，至此，以上方法作废了。
 使用GitBook（**版本限于4.0之前的版本**） 来编写Octopress博客的步骤：  
 1. ```cd ~/MyBlog```  
 2. **`rake new_post['文章名']`**或 **`rake new_page['404']`**新建md文档.  
@@ -30,4 +31,3 @@ categories: Octopress
 4. 配置SUMMARY.md 关联 gitbook，通过目录访问Octopress文档。  
 5. 打开gitbook客户端，对新建的文档进行编写即可。
 
-<font color=red>更新：</font>gitbook 4.2.2之后，默认将rake new_post生成的文件目录导入到~/gitbook目录中，至此，以上方法作废了。
