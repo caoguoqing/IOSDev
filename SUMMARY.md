@@ -9,6 +9,6 @@
    * [UIImage三种渲染模式](2015-11-26-uiimagede-xuan-ran-mo-shi.md)
 * [ruby类工具集](rubylei_gong_ju_ji.md)
    * [安装 Ruby, Rails 运行环境](2015-01-21-rubygemsxue-xi.md)
-* 学习管理
+* [学习管理](xue_xi_guan_li.md)
    * [产品领导者的五种特质](2015-11-27-chan-pin-ling-dao-zhe-de-wu-chong-te-zhi.markdown)
 
