@@ -35,6 +35,7 @@ categories:
 // > 使用重定向，将过滤的ip行，写入路由硬盘/userdisk/data/my/ip目录中
 //通过小米路由手机客户端，找到该txt文件，并下载到手机sd卡中
 //查看该文件，既有路由重启后的当前IP  
+<!--more-->
 	详见getIP.sh
 
 		#!/bin/sh
