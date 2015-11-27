@@ -15,7 +15,14 @@ categories: Octopress
 ####协助Octopress
 * 必须在yourBlog目录下，执行rake newe_post['']创建.MarkDown文件。
 * 将第一步新建的文件，通过Gitbook的Files tree 树形栏，导入yourbookname版本库中。
-* 
+* 在gitbook的Table of Contents中新建章节，命名为第一步创建时的文件名。
+* 编辑yourbookName 版本库中的SUMMARY.md，将文件与目录关联起来，并保存SUMMARY.md。
+* 点击目录节点名，即可在编辑框内，对该md文件编辑。
+
+####如何将gitbook编辑的md文件内容同步到Octopress中
+* 方法一：拷贝gitbook编辑的md文件，覆盖到octpress的_post目录下。
+* 方法二：通过github，公用一个版本库，来管理同步。
+
 使用GitBook（**版本限于4.0之前的版本**） 来编写Octopress博客的步骤：  
 1. ```cd ~/MyBlog```  
 2. **`rake new_post['文章名']`**或 **`rake new_page['404']`**新建md文档.  
