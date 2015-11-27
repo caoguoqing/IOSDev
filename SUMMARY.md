@@ -10,4 +10,5 @@
 * [ruby类工具集](rubylei_gong_ju_ji.md)
    * [安装 Ruby, Rails 运行环境](2015-01-21-rubygemsxue-xi.md)
 * 学习管理
+   * 产品领导者的五种特质
 
