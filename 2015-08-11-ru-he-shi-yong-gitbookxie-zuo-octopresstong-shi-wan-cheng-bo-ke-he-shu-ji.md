@@ -5,7 +5,7 @@ date: 2015-08-11 14:41:40 +0800
 comments: true
 tags: [octopress,blog,github,mou,ruby]
 keywords: boys,octopress,技术
-categories: Octopress
+categories: gitBook
 ---
 ####将gitbook添加到github库中
 * 使用gitbook新建New book，即在~/GitBook/Library/Import/yourbookName/下，创建了git库
