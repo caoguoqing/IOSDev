@@ -24,6 +24,7 @@ categories: Octopress
 * 方法二：通过github，公用一个版本库，来管理同步。
 
 <font color=red>更新：</font>gitbook 4.2.2之后，默认将rake new_post生成的文件目录导入到~/gitbook目录中，至此，以上方法作废了。
+
 使用GitBook（**版本限于4.0之前的版本**） 来编写Octopress博客的步骤：  
 1. ```cd ~/MyBlog```  
 2. **`rake new_post['文章名']`**或 **`rake new_page['404']`**新建md文档.  
