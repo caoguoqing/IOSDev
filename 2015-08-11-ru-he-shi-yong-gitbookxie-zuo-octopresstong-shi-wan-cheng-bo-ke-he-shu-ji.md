@@ -3,7 +3,7 @@ layout: post
 title: "如何使用gitBook协作Octopress同时完成博客和书籍"
 date: 2015-08-11 14:41:40 +0800
 comments: true
-tags: [octopress,blog,github,mou,ruby]
+tags: [octopress,gitBook]
 keywords: boys,octopress,技术
 categories: gitBook
 ---
