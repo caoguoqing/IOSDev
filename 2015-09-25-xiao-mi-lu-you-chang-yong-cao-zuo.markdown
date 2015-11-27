@@ -74,13 +74,13 @@ categories:
 
 5.由于铁通机制，分配的独立iP，并不能被外网访问
 #### ssh登录数据库	[转](http://bbs.xiaomi.cn/thread-10339070-1-1.html)
-先确保能访问[LLMP搭建的个人网站地址](http://192.168.31.1:8088/phpinfo.php)  
+先确保能访问 [该地址](http://192.168.31.1:8088/phpinfo.php)
 
 修复教程：  
 
 1. 登录路由： `ssh root@192.168.31.1`  mm:admin
 2. 执行命令：`/userdisk/data/lamp.sh fix`  
-3. 再次访问个人网站地址。  
+3. 再次访问[LLMP搭建的个人网站地址](http://192.168.31.1:8088/phpinfo.php) 。  
 
 		1./userdisk/data/lamp.sh  (安装本插件，一键开启llmp，具体安装过程可见前面的安装步骤）       
 		2./userdisk/data/lamp.sh a（卸载本插件，恢复安装前，注：卸载本插件时路由器会自动重启一次，自动断网几分钟）

@@ -15,6 +15,22 @@ categories:
 7. <a href="#stash-unapply">新建stash-unapply别名</a>
 8. <a href="#stashBranch">从储藏中创建分支</a>
 
+####惨痛经历
+ 将代码全提交值 默认的head分支中，切换分支后，无法找到分支的严重后果：
+ 解决办法：
+ 查看本地的索引的提交日志：
+ 
+ 	admin$ git reflog
+ 		
+ 			a1d09fd HEAD@{0}: checkout: moving from all to master
+			a1d09fd HEAD@{1}: checkout: moving from master to all
+			a1d09fd HEAD@{2}: checkout: moving from HEAD to master
+			a1d09fd HEAD@{3}: checkout: moving from all to HEAD
+根据上面的sh2值，回滚：
+
+	admin$ git reset  —hard  a1d09fd 
+这样就可以找回代码.
+ 	
 ####<a name="Stashing">Git工具 - 储藏（Stashing）</a>
 
 场景：当项目中某一部分正在编码中，突然接到新任务，又必须换至其他分支去完成。
