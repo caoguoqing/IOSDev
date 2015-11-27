@@ -14,5 +14,5 @@
    * [产品领导者的五种特质](2015-11-27-chan-pin-ling-dao-zhe-de-wu-chong-te-zhi.markdown)
 * 版本库管理
    * 清除git历史记录大文件bfg
-* Swift学习
+* [Swift学习](swiftxue_xi.md)
 
