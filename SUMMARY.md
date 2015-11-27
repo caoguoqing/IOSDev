@@ -15,5 +15,5 @@
 * 版本库管理
    * 清除git历史记录大文件bfg
 * [Swift学习](swiftxue_xi.md)
-   * Swift最佳实践
+   * [Swift最佳实践](2015-09-29-zhuan-swiftzui-jia-shi-jian.markdown)
 
