@@ -9,7 +9,7 @@ categories: gitBook
 ---
 ####将gitbook添加到github库中
 * 使用gitbook新建New book，即在~/GitBook/Library/Import/yourbookName/下，创建了git库
-* 菜单：Book -> Repository setting... -> ![设置库路径](EAC7C104-FCE1-40CF-9766-F14C4F271FCF.png)
+* 菜单：Book -> Repository setting... -> ![设置库路径](https://raw.githubusercontent.com/huos3203/IOSDev/master/EAC7C104-FCE1-40CF-9766-F14C4F271FCF.png)
 * 使用SourceTree版本工具，添加本地的yourbookName版本库，来协助gitbook管理版本。
 
 ####协助Octopress
