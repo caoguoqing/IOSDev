@@ -7,6 +7,15 @@ tags: [octopress,blog,github,mou,ruby]
 keywords: boys,octopress,技术
 categories: Octopress
 ---
+####将gitbook添加到github库中
+* 使用gitbook新建New book，即在~/GitBook/Library/Import/yourbookName/下，创建了git库
+* 菜单：Book -> Repository setting... -> ![设置库路径](EAC7C104-FCE1-40CF-9766-F14C4F271FCF.png)
+* 使用SourceTree版本工具，添加本地的yourbookName版本库，来协助gitbook管理版本。
+
+####协助Octopress
+* 必须在yourBlog目录下，执行rake newe_post['']创建.MarkDown文件。
+* 将第一步新建的文件，通过Gitbook的Files tree 树形栏，导入yourbookname版本库中。
+* 
 使用GitBook（**版本限于4.0之前的版本**） 来编写Octopress博客的步骤：  
 1. ```cd ~/MyBlog```  
 2. **`rake new_post['文章名']`**或 **`rake new_page['404']`**新建md文档.  
