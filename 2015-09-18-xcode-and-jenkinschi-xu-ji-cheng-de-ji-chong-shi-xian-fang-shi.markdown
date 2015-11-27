@@ -26,7 +26,7 @@ jenkins使用配置：
 4. 启动时，在命令行中输入：**`jenkins`** 回车  即可启动
 5. 访问：http://127.0.0.1:8081/
 6. 重启：http://[jenkins-server]/[command] exit推出，restart重启，reload重载。
-
+<!--more-->
 ####[使用jenkins+calabash+cocoapods搭建ios持续集成环境](http://blog.csdn.net/zangcw/article/details/25299243)
 
 1. calabash  是一款开源的跨平台UI测试工具，目前支持iOS和Android。它使用Cucumber作为测试核心，Cucumber是一个在敏捷团队十分流行的自动化的功能测试工具，它使用接近于自然语言的特性文档进行用例的书写和测试，支持多语言和多平台。
