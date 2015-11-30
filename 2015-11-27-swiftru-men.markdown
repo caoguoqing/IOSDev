@@ -142,6 +142,7 @@ for (kind, numbers) in interestingNumbers {
 ```
 你可以在循环中保持一个索引，通过 “..” 来表示索引范围或明确声明一个初始值、条件、增量。
 这两个循环做相同的事情:
+```swift
 var firstForLoop = 0
 for i in 0..3 {
     firstForLoop += i
