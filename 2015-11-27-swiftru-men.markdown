@@ -100,13 +100,13 @@ occupations["Jayne"] = "Public Relations"
 ```swift
 var optionalString: String? = "Hello"
 optionalString == nil
-
 var optionalName: String? = "John Appleseed"
 var greeting = "Hello!"
 if let name = optionalName {
     greeting = "Hello, \(name)"
 }
 ```
+
 * switch 支持多种数据以及多种比较，不限制必须是整数和测试相等  
 ```swift
 let vegetable = "red pepper"
