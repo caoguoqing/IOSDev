@@ -58,7 +58,7 @@ let explicitDouble: Double = 70
 ```
 2. 变量  拼接到字符串  -- 变量值永远不会隐含转换到其他类型
 
-```
+```objc
 let label = “The width is ”
 let width = 94
 let widthLabel = label + String(width)
