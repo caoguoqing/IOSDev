@@ -62,6 +62,13 @@ let label = "The width is "
 let width = 94
 let widthLabel = label + String(width)
 ```
+* 以小括号来写值，并用反斜线(“”)放在小括号之前
+```swift
+let apples = 3
+let oranges = 5     //by gashero
+let appleSummary = "I have \(apples) apples."
+let fruitSummary = "I have \(apples + oranges) pieces of fruit."
+```
 
 ####数组和字典的用法
 1. 声明并初始化
