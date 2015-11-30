@@ -67,7 +67,7 @@ let widthLabel = label + String(width)
 ######数组和字典的用法
 1. 声明并初始化
 
-```objc
+``` objc
 let emptyArray = String[]()
 let emptyDictionary = Dictionary<String, Float>()
 
