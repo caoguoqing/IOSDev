@@ -107,7 +107,21 @@ if let name = optionalName {
     greeting = "Hello, \(name)"
 }
 ```
-
+* switch 支持多种数据以及多种比较，不限制必须是整数和测试相等
+```swift
+let vegetable = "red pepper"
+switch vegetable {
+case "celery":
+    let vegetableComment = "Add some raisins and make ants on a log."
+case "cucumber", "watercress":
+    let vegetableComment = "That would make a good tea sandwich."
+case let x where x.hasSuffix("pepper"):
+    let vegetableComment = "Is it a spicy \(x)?"
+default:    //by gashero
+    let vegetableComment = "Everything tastes good in soup."
+}
+```
+在执行匹配的情况后，程序会从 switch 跳出，而不是继续执行下一个情况。所以不再需要 break 跳出 switch 。
 ######2. 循环控制
 
 
