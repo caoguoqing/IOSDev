@@ -74,6 +74,7 @@ let emptyDictionary = Dictionary<String, Float>()
 shoppingList = [] //去购物并买些东西 
 ```
 如果数组类型无法推断，你可以写空的数组为 “[]” 和空的字典为 “[:]“。
+
 2. 访问
 创建一个数组和字典使用方括号 “[]” ，访问其元素则是通过方括号中的索引或键。                        
 
