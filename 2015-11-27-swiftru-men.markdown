@@ -93,7 +93,7 @@ occupations["Jayne"] = "Public Relations"
 ####控制流  --  条件控制，循环控制
 
 ######1. 条件控制
- * if  条件必须是布尔表达式  
+* if  条件必须是布尔表达式  
  在 if 语句中，条件必须是布尔表达式，这意味着 if score { … } 是错误的，不能隐含的与0比较。
 你可以一起使用 if 和 let 来防止值的丢失。这些值是可选的。
 可选值可以包含一个值或包含一个 nil 来指定值还不存在。写一个问号 “?” 在类型后表示值是可选的。
@@ -123,6 +123,33 @@ default:    //by gashero
 ```
 在执行匹配的情况后，程序会从 switch 跳出，而不是继续执行下一个情况。所以不再需要 break 跳出 switch 。
 ######2. 循环控制
+* for-in 来迭代字典中的每个元素  
+可使用 for-in 来迭代字典中的每个元素，提供一对名字来使用每个键值对。
+```swift
+let interestingNumbers = [
+    "Prime": [2, 3, 5, 7, 11, 13],
+    "Fibonacci": [1, 1, 2, 3, 5, 8],
+    "Square": [1, 4, 9, 16, 25],
+]
+var largest = 0
+for (kind, numbers) in interestingNumbers {
+    for number in numbers {
+        if number > largest {
+            largest = number
+        }
+    }
+}
+你可以在循环中保持一个索引，通过 “..” 来表示索引范围或明确声明一个初始值、条件、增量。
+这两个循环做相同的事情:
+var firstForLoop = 0
+for i in 0..3 {
+    firstForLoop += i
+}
+firstForLoop
 
-
+var secondForLoop = 0
+for var i = 0; i < 3; ++i {
+    secondForLoop += 1
+}
+使用 .. 构造范围忽略最高值，而用 … 构造的范围则包含两个值。
 
