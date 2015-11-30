@@ -242,3 +242,23 @@ var numbers = [20, 19, 7, 12]
 hasAnyMatches(numbers, lessThanTen)
    ```
    函数实际是闭包的特殊情况。你可以写一个闭包而无需名字，只需要放在大括号中即可。使用 in 到特定参数和主体的返回值。
+* 函数的返回值
+   1. 返回多个值 ： getGasPrices() -> (Double, Double, Double)
+   使用元组(tuple)来返回多个值                           
+   ```swift
+func getGasPrices() -> (Double, Double, Double) {
+    return (3.59, 3.69, 3.79)
+}
+```
+   2. 返回另一个函数  ： makeIncrementer() -> (Int -> Int)
+   函数是第一类型的
+   ```swift
+func makeIncrementer() -> (Int -> Int) {
+    func addOne(number: Int) -> Int {
+        return 1 + number
+    }
+    return addOne
+}
+var increment = makeIncrementer()
+increment(7)
+```
