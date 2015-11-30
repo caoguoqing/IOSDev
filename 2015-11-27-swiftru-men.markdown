@@ -26,7 +26,7 @@ Swift集成了现代编程语言思想，以及Apple工程文化的智慧，编�
 
 ####swift语法
 Playground允许你编辑代码并立即看到结果,可以从”Hello, world”开始学起并过渡到整个系统。
-在Xcode的playground中打开。
+在Xcode的playground中打开:
 ```objc
 println("Hello, world")
 ```
