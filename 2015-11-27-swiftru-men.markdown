@@ -252,7 +252,7 @@ func getGasPrices() -> (Double, Double, Double) {
 ```
    2. 返回另一个函数  ： makeIncrementer() -> (Int -> Int)
    函数是第一类型的
-   ```
+   ```objc
 func makeIncrementer() -> (Int -> Int) {
     func addOne(number: Int) -> Int {
         return 1 + number
