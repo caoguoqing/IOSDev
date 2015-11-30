@@ -93,7 +93,20 @@ occupations["Jayne"] = "Public Relations"
 ####控制流  --  条件控制，循环控制
 
 ######1. 条件控制
- * if  条件必须是布尔表达式
+ * if  条件必须是布尔表达式  
+ 在 if 语句中，条件必须是布尔表达式，这意味着 if score { … } 是错误的，不能隐含的与0比较。
+你可以一起使用 if 和 let 来防止值的丢失。这些值是可选的。
+可选值可以包含一个值或包含一个 nil 来指定值还不存在。写一个问号 “?” 在类型后表示值是可选的。
+```swift
+var optionalString: String? = "Hello"
+optionalString == nil
+
+var optionalName: String? = "John Appleseed"
+var greeting = "Hello!"
+if let name = optionalName {
+    greeting = "Hello, \(name)"
+}
+
 
 ######2. 循环控制
 
