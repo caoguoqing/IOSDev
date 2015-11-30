@@ -66,13 +66,12 @@ let widthLabel = label + String(width)
 
 ######数组和字典的用法
 1. 声明并初始化
-
 ``` swift
 let emptyArray = String[]()
 let emptyDictionary = Dictionary<String, Float>()
-
 shoppingList = [] //去购物并买些东西 
 ```
+
 如果数组类型无法推断，你可以写空的数组为 “[]” 和空的字典为 “[:]“。
 2. 访问
 
