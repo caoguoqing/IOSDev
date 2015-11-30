@@ -48,15 +48,26 @@ let myConstant = 42
 在上面例子中，编译其会推断myVariable是一个整数类型，因为其初始化值就是个整数。
 
 ######数组和字典的用法
-1.声明并初始化
+1. 声明并初始化
 ```objc
 let emptyArray = String[]()
 let emptyDictionary = Dictionary<String, Float>()
 
 shoppingList = [] //去购物并买些东西 
 ```
-如果数组类型无法推断，你可以写空的数组为 “[]” 和空的字典为 “[:]“，
+如果数组类型无法推断，你可以写空的数组为 “[]” 和空的字典为 “[:]“。
+2. 访问
+创建一个数组和字典使用方括号 “[]” ，访问其元素则是通过方括号中的索引或键。                        
+```objc
+var shoppingList = ["catfish", "water", "tulips", "blue paint"]
+shoppingList[1] = "bottle of water"
 
+var occupations = [
+   "Malcolm": "Captain",
+   "Kaylee": "Mechanic",
+]
+occupations["Jayne"] = "Public Relations"
+```
 
 
 
