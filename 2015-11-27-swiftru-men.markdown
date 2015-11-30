@@ -37,7 +37,7 @@ println("Hello, world")
 
 所有这些使得Swift成为Apple软件开发者创新的源泉。
 
-######简单值  -- 使用 let 来定义常量， var 定义变量
+####简单值  -- 使用 let 来定义常量， var 定义变量
 提供一个值就可以创建常量或变量，并让编译器推断其类型,一个常量或变量必须与赋值时拥有相同的类型。因此你不用严格定义类型。
 常量定义类似于函数式编程语言中的变量,常量的值无需在编译时指定，但是至少要赋值一次,赋值后就无法修改。
 ``` swift
@@ -47,8 +47,7 @@ let myConstant = 42
 ```
 在上面例子中，编译其会推断myVariable是一个整数类型，因为其初始化值就是个整数。
 
-1. 显示/隐式 初始化数据类型 ---   类型与变量名绑定，属于静态类型语言
-
+######1. 显示/隐式 初始化数据类型 ---   类型与变量名绑定，属于静态类型语言  
 类型与变量名绑定，属于静态类型语言。有助于静态优化。与Python、JavaScript等有所区别。
 例如：初始化值没有提供足够的信息(或没有初始化值)，可以在变量名后写类型，以冒号分隔。
 ```swift
@@ -56,15 +55,14 @@ let imlicitInteger = 70
 let imlicitDouble = 70.0
 let explicitDouble: Double = 70
 ```
-2. 变量  拼接到字符串  -- 变量值永远不会隐含转换到其他类型
-
+######2. 变量  拼接到字符串  -- 变量值永远不会隐含转换到其他类型
 ```swift
 let label = "The width is "
 let width = 94
 let widthLabel = label + String(width)
 ```
 
-######数组和字典的用法
+####数组和字典的用法
 1. 声明并初始化
 ``` swift
 let emptyArray = String[]()
@@ -72,13 +70,11 @@ let emptyDictionary = Dictionary<String, Float>()
 shoppingList = [] //去购物并买些东西 
 ```
 如果数组类型无法推断，你可以写空的数组为 “[]” 和空的字典为 “[:]“。
-2. 访问
-
-创建一个数组和字典使用方括号 “[]” ，访问其元素则是通过方括号中的索引或键。                        
+2. 访问   
+创建一个数组和字典使用方括号 “[]”，访问其元素则是通过方括号中的索引或键。                      
 ```swift
 var shoppingList = ["catfish", "water", "tulips", "blue paint"]
 shoppingList[1] = "bottle of water"
-
 var occupations = [
    "Malcolm": "Captain",
    "Kaylee": "Mechanic",
