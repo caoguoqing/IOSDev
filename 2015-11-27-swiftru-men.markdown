@@ -246,14 +246,14 @@ hasAnyMatches(numbers, lessThanTen)
 * 函数的返回值
    1. 返回多个值 ： getGasPrices() -> (Double, Double, Double)
    使用元组(tuple)来返回多个值                           
-   ```swift
+```swift
 func getGasPrices() -> (Double, Double, Double) {
     return (3.59, 3.69, 3.79)
 }
 ```
    2. 返回另一个函数  ： makeIncrementer() -> (Int -> Int)
    函数是第一类型的
-  ```swift
+```swift
 func makeIncrementer() -> (Int -> Int) {
     func addOne(number: Int) -> Int {
         return 1 + number
