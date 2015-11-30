@@ -77,7 +77,7 @@ shoppingList = [] //去购物并买些东西
 2. 访问
 创建一个数组和字典使用方括号 “[]” ，访问其元素则是通过方括号中的索引或键。                        
 
-```objc
+```swift
 var shoppingList = ["catfish", "water", "tulips", "blue paint"]
 shoppingList[1] = "bottle of water"
 
