@@ -4,7 +4,7 @@ publiced: false
 title: "Swift入门"
 date: 2015-11-27 17:18:21 +0800
 comments: true
-tags:[]
+tags:[swift,]
 keywords: Swift,语法
 categories: Swift
 ---
