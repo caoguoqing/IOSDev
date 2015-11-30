@@ -189,3 +189,56 @@ numbers.map({number in 3 * number})
 ```swift
 sort([1, 5, 3, 12, 2]) { $0 > $1 }
 ```
+######2. 函数
+* 函数的声明   --  使用func 声明一个函数  使用 ->分隔参数的名字和返回值类型,
+调用函数使用他的名字加上小括号中的参数列表
+```swift
+func greet(name: String, day: String) -> String {
+    return "Hello \(name), today is \(day)."
+}
+greet("Bob", "Tuesday")
+```
+* 函数的嵌套  
+内嵌函数可以访问其定义所在函数的变量。
+你可以使用内嵌函数来组织代码，避免过长和过于复杂：
+```swift
+func returnFifteen() -> Int {
+    var y = 10
+    func add() {
+        y += 5
+    }
+    add()
+    return y
+}  ```
+
+* 函数接收的参数
+   1. 可变参数的个数  sumOf(numbers: Int...) -> Int{}  
+   函数可以接受可变参数个数，收集到一个数组中
+```swift
+func sumOf(numbers: Int...) -> Int {
+    var sum = 0
+    for number in numbers {
+        sum += number
+    }
+    return sum
+}
+//例子
+sumOf(42, 597, 12)
+```
+   2. 其他函数作为参数  func hasAnyMatches(list: Int[], condition: Int -> Bool) -> Bool{}
+   ```swift
+   func hasAnyMatches(list: Int[], condition: Int -> Bool) -> Bool {
+    for item in list {
+        if condition(item) {
+            return true
+        }
+    }
+    return false
+}
+func lessThanTen(number: Int) -> Bool {
+    return number < 10
+}
+var numbers = [20, 19, 7, 12]
+hasAnyMatches(numbers, lessThanTen)
+   ```
+   函数实际是闭包的特殊情况。你可以写一个闭包而无需名字，只需要放在大括号中即可。使用 in 到特定参数和主体的返回值。
