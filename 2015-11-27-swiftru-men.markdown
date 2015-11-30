@@ -209,7 +209,8 @@ func returnFifteen() -> Int {
     }
     add()
     return y
-}  ```
+}  
+```
 
 * 函数接收的参数
    1. 可变参数的个数  sumOf(numbers: Int...) -> Int{}  
@@ -226,7 +227,7 @@ func sumOf(numbers: Int...) -> Int {
 sumOf(42, 597, 12)
 ```
    2. 其他函数作为参数  func hasAnyMatches(list: Int[], condition: Int -> Bool) -> Bool{}
-   ```swift
+```swift
    func hasAnyMatches(list: Int[], condition: Int -> Bool) -> Bool {
     for item in list {
         if condition(item) {
@@ -240,7 +241,7 @@ func lessThanTen(number: Int) -> Bool {
 }
 var numbers = [20, 19, 7, 12]
 hasAnyMatches(numbers, lessThanTen)
-   ```
+```
    函数实际是闭包的特殊情况。你可以写一个闭包而无需名字，只需要放在大括号中即可。使用 in 到特定参数和主体的返回值。
 * 函数的返回值
    1. 返回多个值 ： getGasPrices() -> (Double, Double, Double)
@@ -252,7 +253,7 @@ func getGasPrices() -> (Double, Double, Double) {
 ```
    2. 返回另一个函数  ： makeIncrementer() -> (Int -> Int)
    函数是第一类型的
-   ```swift
+  ```swift
 func makeIncrementer() -> (Int -> Int) {
     func addOne(number: Int) -> Int {
         return 1 + number
