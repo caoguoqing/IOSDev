@@ -47,6 +47,16 @@ let myConstant = 42
 ```
 在上面例子中，编译其会推断myVariable是一个整数类型，因为其初始化值就是个整数。
 
+1. 显示/隐式 初始化数据类型 ---   类型与变量名绑定，属于静态类型语言
+
+类型与变量名绑定，属于静态类型语言。有助于静态优化。与Python、JavaScript等有所区别。
+例如：初始化值没有提供足够的信息(或没有初始化值)，可以在变量名后写类型，以冒号分隔。
+```
+let imlicitInteger = 70
+let imlicitDouble = 70.0
+let explicitDouble: Double = 70
+```
+
 ######数组和字典的用法
 1. 声明并初始化
 ```objc
