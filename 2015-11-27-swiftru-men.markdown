@@ -153,5 +153,6 @@ var secondForLoop = 0
 for var i = 0; i < 3; ++i {
     secondForLoop += 1
 }
+```
 使用 .. 构造范围忽略最高值，而用 … 构造的范围则包含两个值。
 
