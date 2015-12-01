@@ -34,6 +34,8 @@ categories: swift
 ####OC如何调用Swift写的类  -- 	为了在 Objective-C 中可用， Swift 类必须是 Objective-C 类的子类，或者用 @Objective-C 标记；
 1. 选中targets->build settings ->packing->Product Module Name 中设置模块名（可以自定义），这个名称很重要 swift 的头文件就是根据这个来命名的，例如：SwiftModule。
 2. 在OC头文件类中，添加import "SwiftModule-swift.h"但你在整个工程中是找不到这个文件的，但可以使用CMD+ 鼠标点击可看这个头文件中的内容。  
+
+
 这样，工程中如查Swift要使用OC,则把需要使用的OC类的头文件，全写在MixDemo-Bridging-Header.h里。同样如果OC中所使用的swift类，只需要Clean一把，再编就可以了，但不要忘了导入SwiftModule-swift.h哦（名称自取，但-swift.h是固定的），另外还有一个需要读者注意的。
 
 注：
