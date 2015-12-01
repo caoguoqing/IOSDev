@@ -265,7 +265,7 @@ increment(7)
 ```
 ####对象与类
 ######1. 类的创建  ：class 类名 {}
-使用 class 可以创建一个类。
+1. 使用 class 可以创建一个类。
 一个属性的声明则是在类里作为常量或变量声明的，除了是在类的上下文中。方法和函数也是这么写的。
 ```swift
 class Shape {
@@ -274,6 +274,52 @@ class Shape {
         return "A shape with \(numberOfSides) sides."
     }
 }
+```
+2. 类的构造器  ： 构造器来在创建实例时设置类，使用 init 来创建
+```swift
+class NamedShape {
+    var numberOfSides: Int = 0
+    var name: String
+
+    init(name: String) {
+        self.name = name
+    }   //by gashero
+
+    func simpleDescription() -> String {
+        return "A Shape with \(numberOfSides) sides."
+    }
+}
+```
+self 用来区分 name 属性和 name 参数。
+构造器的声明跟函数一样，除了会创建类的实例。每个属性都需要赋值，无论在声明里还是在构造器里。
+3. 类的析构器，来执行对象销毁时的清理工作，使用 deinit 来创建
+使用 deinit 来创建一个析构器，来执行对象销毁时的清理工作。
+4. 超类的继承，与override 重载超类的方法实现
+子类包括其超类的名字，以冒号分隔。在继承标准根类时无需声明，所以你可以忽略超类。
+子类的方法可以通过标记 override 重载超类中的实现，而没有 override 的会被编译器看作是错误。
+编译器也会检查那些没有被重载的方法。
+```swift
+class Square: NamedShape {
+    var sideLength: Double
+
+    init(sideLength: Double, name: String) {
+        self.sideLength = sideLength
+        super.init(name: name)
+        numberOfSides = 4
+    }
+
+    func area() -> Double {
+        return sideLength * sideLength
+    }
+
+    override func simpleDescription() -> String {
+        return "A square with sides of length \(sideLength)."
+    }
+}
+
+let test = Square(sideLength: 5.2, name: "my test square")
+test.area()
+test.simpleDescription()
 ```
 
 ######2. 类的实例创建   :  类名()  ,点语法来访问实例的属性和方法
