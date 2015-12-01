@@ -8,3 +8,4 @@ keywords: swift,objc,桥连接,Invalid Swift Support
 categories: swift
 ---
 ####Swift中使用OC的类声明  -- 实现配置 桥接的头文件
+######方式一：自动添加桥接头文件
