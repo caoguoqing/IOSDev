@@ -7,3 +7,4 @@ tags: [swift,objc,混编,Invalid Swift Support]
 keywords: swift,objc,桥连接,Invalid Swift Support 
 categories: swift
 ---
+####Swift中使用OC的类声明  -- 实现配置 桥接的头文件
