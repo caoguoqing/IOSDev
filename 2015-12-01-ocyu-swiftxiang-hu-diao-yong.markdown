@@ -25,6 +25,7 @@ categories: swift
 2. 在targets->build settings ->Object-C Bridging Header 设为生成的个桥接的头文件即可。
 3. 把想要在swift类中调用的OC头文件放使用import "" 写到这个桥接文件中：
 ```objc
-//  Use this file to import your target's public headers that you would like to expose to Swift.  	//MixDemo/MixDemo-Bridging-Header.h    
+//  Use this file to import your target's public headers that you would like to expose to Swift.  	
+//MixDemo/MixDemo-Bridging-Header.h    
 #import "OCChannel.h"  
 ```
