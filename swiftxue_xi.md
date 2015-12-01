@@ -12,6 +12,7 @@ UIImage *tabbarImageSel = [UIImage imageNamed:imageSelName];
 item.image   = [tabbarImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 item.selectedImage =  [tabbarImageSel imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 ```
+无意中的关联，只为记录过程，经实践，修改关联的控件属性，并不起作用
 ```objc
 /**
  *  @author shuguang, 15-12-01 14:12:42
