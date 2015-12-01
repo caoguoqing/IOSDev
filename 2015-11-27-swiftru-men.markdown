@@ -276,6 +276,15 @@ class Shape {
 }
 ```
 
+######2. 类的实例创建   :  类名()  ,点语法来访问实例的属性和方法
+通过在类名后加小括号来创建类的实例。使用点语法来访问实例的属性和方法。
+```swift
+var shape = Shape()
+shape.numberOfSides = 7
+var shapeDescription = shape.simpleDescription()
+```
+
+
 
 
 
