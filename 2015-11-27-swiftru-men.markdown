@@ -263,3 +263,16 @@ func makeIncrementer() -> (Int -> Int) {
 var increment = makeIncrementer()
 increment(7)
 ```
+####对象与类
+######1. 类的创建  ：class 类名 {}
+使用 class 可以创建一个类。
+一个属性的声明则是在类里作为常量或变量声明的，除了是在类的上下文中。方法和函数也是这么写的。
+```swift
+class Shape {
+    var numberOfSides = 0
+    func simpleDescription() -> String {
+        return "A shape with \(numberOfSides) sides."
+    }
+}
+```
+
