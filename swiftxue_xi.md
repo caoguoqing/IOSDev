@@ -23,3 +23,5 @@ item.selectedImage =  [tabbarImageSel imageWithRenderingMode:UIImageRenderingMod
  */
 @property (weak, nonatomic) IBOutlet UITabBarItem *ibTabbar;
 ```
+
+tabVC，当tabBarItem个数超出四个之后，会自动出现More按钮，点击后跳转到剩余的item列表中，在选择跳转到不同的VC中。
