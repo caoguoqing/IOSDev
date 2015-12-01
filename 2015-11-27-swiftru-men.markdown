@@ -294,10 +294,9 @@ self 用来区分 name 属性和 name 参数。
 构造器的声明跟函数一样，除了会创建类的实例。每个属性都需要赋值，无论在声明里还是在构造器里。
 3. 类的析构器，来执行对象销毁时的清理工作，使用 deinit 来创建
 使用 deinit 来创建一个析构器，来执行对象销毁时的清理工作。
-4. 超类的继承，与override 重载超类的方法实现
-子类包括其超类的名字，以冒号分隔。在继承标准根类时无需声明，所以你可以忽略超类。
-子类的方法可以通过标记 override 重载超类中的实现，而没有 override 的会被编译器看作是错误。
-编译器也会检查那些没有被重载的方法。
+4. 超类的继承    
+    * 子类包括其超类的名字，以冒号分隔。在继承标准根类时无需声明，所以你可以忽略超类。  
+    * 子类的方法可以通过标记 override 重载超类中的实现，而没有 override 的会被编译器看作是错误,编译器也会检查那些没有被重载的方法。
 ```swift
 class Square: NamedShape {
     var sideLength: Double
@@ -316,7 +315,6 @@ class Square: NamedShape {
         return "A square with sides of length \(sideLength)."
     }
 }
-
 let test = Square(sideLength: 5.2, name: "my test square")
 test.area()
 test.simpleDescription()
