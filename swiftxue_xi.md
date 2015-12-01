@@ -5,7 +5,13 @@
 关于swift随时笔记
 
 修改tabbaritem按钮使用图片的本身的颜色值：
-自定义一个tabVC，在viewdid周期方法中指定tabbaritem的选中和未选中的状态图片（渲染方式imageWithRenderingMode）。
+自定义一个tabVC，在viewdid周期方法中指定tabbaritem的选中和未选中的状态图片，并指定图片的渲染方式imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal。
+```objc
+UIImage *tabbarImage = [UIImage imageNamed:imageName];
+UIImage *tabbarImageSel = [UIImage imageNamed:imageSelName];
+item.image   = [tabbarImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+item.selectedImage =  [tabbarImageSel imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+```
 ```objc
 /**
  *  @author shuguang, 15-12-01 14:12:42
