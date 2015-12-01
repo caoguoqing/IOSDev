@@ -18,3 +18,13 @@ categories: swift
 	//MixDemo/MixDemo-Bridging-Header.h    
 	#import "OCChannel.h"  
 ```
+######方式二：手动添加桥接头文件
+同样的，当你知道这个swift搜索头文件的关系后，就不需要再理会这个-Bridging-Header.h的文件了。
+完全可以手工建一个并取自己喜欢的名字：
+1. 新建一个头文件，名为:OCContainerHeader.h
+2. 在targets->build settings ->Object-C Bridging Header 设为生成的个桥接的头文件即可。
+3. 把想要在swift类中调用的OC头文件放使用import "" 写到这个桥接文件中：
+```objc
+//  Use this file to import your target's public headers that you would like to expose to Swift.  	//MixDemo/MixDemo-Bridging-Header.h    
+#import "OCChannel.h"  
+```
